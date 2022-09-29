@@ -1,0 +1,6 @@
+Flask 
+pandas 
+numpy 
+joblib 
+pickle
+#from tensorflow.keras.models import load_model
