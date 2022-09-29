@@ -2,5 +2,5 @@ Flask
 pandas 
 numpy 
 joblib 
-pickle
+#pickle
 #from tensorflow.keras.models import load_model
