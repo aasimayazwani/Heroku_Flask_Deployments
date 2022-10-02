@@ -1,0 +1,12 @@
+{"starting_SOC":90,
+"average_temp":70,
+"miles_driven":12,
+"average_speed":30,
+"starting_alt":12, 
+"accu_ascending":100, 
+"accu_descending":-200, 
+"num_peak":12,
+"current_day":10,
+"current_hour":10,
+"energy_capacity":440,
+"manufacturer":1}

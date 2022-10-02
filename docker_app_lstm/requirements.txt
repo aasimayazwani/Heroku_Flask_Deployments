@@ -1,0 +1,7 @@
+flask
+sklearn 
+gunicorn 
+#tensorflow==2.9.2 
+joblib 
+keras==2.9.0
+Keras-Preprocessing==1.1.2

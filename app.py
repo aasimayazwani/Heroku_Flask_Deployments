@@ -10,21 +10,23 @@ model = pickle.load(open("XGB_Sep_02_2022.sav", 'rb'))
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=["POST"])
 def predict():
     '''
     For rendering results on HTML GUI
     '''
     int_features = [int(x) for x in request.form.values()]
+    print(int_features)
     new_df = pd.DataFrame(int_features).T
-    #print(new_df)
+    print(new_df)
     prediction = model.predict(new_df)
     print(prediction)
     output = round(prediction[0], 2)
     print(output)
-    return render_template('index.html', prediction_text='Energy Demand Per Mile should be $ {}'.format(output))
+    return render_template('output.html',prediction_text='Energy Demand Per Mile should be $ {}'.format(output))
+    #return render_template('index.html', prediction_text='Energy Demand Per Mile should be $ {}'.format(output))
 
-@app.route('/predict_api',methods=['POST'])
+@app.route('/predict_api',methods=["POST"])
 def predict_api():
     '''
     For direct API calls trought request
@@ -37,7 +39,7 @@ def predict_api():
     return jsonify(output)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
 
 
 

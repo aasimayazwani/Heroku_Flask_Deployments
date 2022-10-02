@@ -1,6 +1,8 @@
-Flask 
+flask 
 pandas 
 numpy 
 joblib 
+scikit-learn
+gunicorn
 #pickle
 #from tensorflow.keras.models import load_model

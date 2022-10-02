@@ -1,7 +1,7 @@
 import requests
 
-#url = 'http://localhost:5000/predict_api'
-url = "https://aw.moevinc.com/predict_api"
+url = 'http://localhost:5000/predict_api'
+#url = "https://aw.moevinc.com/predict_api"
 r = requests.post(url,json={'current_hour':12, 
 							'current_day':2,
 							'starting_SOC':90,

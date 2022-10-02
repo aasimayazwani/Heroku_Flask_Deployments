@@ -17,7 +17,7 @@
 	<h1>Energy Demand Per Mile for Buses</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}" method="POST">
       <input type="text" name="current_hour" placeholder="current_hour" required="required" />
       <input type="text" name="current_day" placeholder="current_day" required="required" />
 		  <input type="text" name="starting_SOC" placeholder="starting_SOC" required="required" />
@@ -27,7 +27,7 @@
       <input type="text" name="Accu_Descending" placeholder="Accu_Descending" required="required" />
       <input type="text" name="Accu_Ascending" placeholder="Accu_Ascending" required="required" />
       <input type="text" name="Average_temp" placeholder="Average_temp" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
    <br>
