@@ -1,0 +1,6 @@
+flask
+sklearn 
+gunicorn 
+joblib 
+tensorflow-cpu
+pandas
